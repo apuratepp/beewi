@@ -1,6 +1,6 @@
 # Beewi
 
-**TODO: Add description**
+Minimal FTP server that forwards uploaded image to a particular Telegram user.
 
 ## Installation
 

@@ -11,6 +11,8 @@ use Mix.Config
 # You can configure your application as:
 #
 #     config :beewi, key: :value
+config :beewi,
+       telegram_user_id: System.get_env("TELEGRAM_USER_ID")
 #
 # and access this configuration in your application as:
 #
@@ -20,6 +22,8 @@ use Mix.Config
 #
 #     config :logger, level: :info
 #
+config :nadia,
+       token: { :system, "TELEGRAM_TOKEN" }
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment

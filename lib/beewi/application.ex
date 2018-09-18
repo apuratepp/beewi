@@ -10,6 +10,10 @@ defmodule Beewi.Application do
     children = [
       # Starts a worker by calling: Beewi.Worker.start_link(arg)
       # {Beewi.Worker, arg},
+      %{
+        id: :bifrost,
+        start: { :bifrost, :start_link, [Beewi, [{:port, 2121}, {:ip_address, {0,0,0,0}}]] },
+       }
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
